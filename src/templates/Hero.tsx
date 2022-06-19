@@ -1,48 +1,10 @@
-import { useState } from 'react';
-
-import { useMetaMask } from 'metamask-react';
-
 import { Background } from '../components/background/Background';
 import { HeroOneDescription } from '../components/hero/HeroOneDescription';
 import { HeroOneProject } from '../components/hero/HeroOneProject';
 import { GroupSection } from '../components/layout/GroupSection';
 import { Section } from '../components/layout/Section';
-import { getMainContract } from '../utils/GetContracts';
 
 const Hero = () => {
-  const [activeColor, setActiveColor] = useState('');
-  const [oposite, setOposite] = useState('');
-  const [adjascent1, setAdjascent1] = useState('');
-  const [adjascent2, setAdjascent2] = useState('');
-  const { ethereum, account, connect, status } = useMetaMask();
-
-  const mainContract = getMainContract(ethereum);
-  const [mining, setMining] = useState(false);
-
-  const submit = async () => {
-    if (status === 'notConnected') {
-      console.log(status);
-    } else {
-      if (!mainContract) {
-        console.error('Maincontract object is required to create a colletion');
-        return;
-      }
-
-      setMining(true);
-      try {
-        const owner = await mainContract.owner();
-        console.log('Create transaction started...', owner);
-
-        // await owner.wait();
-        // console.log(owner);
-        // console.log(`Collection ${collectionName} created!`, createTxn.hash);
-
-        // Router.push('/');
-      } finally {
-        setMining(false);
-      }
-    }
-  };
 
   return (
     <Background color="flex-grow bg-gray-100 dark:bg-gray-800 ">
@@ -55,10 +17,10 @@ const Hero = () => {
         <Section addExtras="flex-row">
           <HeroOneProject
             url=""
-            path="/logos/v2_men.png"
+            path="/logos/men.png"
             imgwidth={360}
             imgheight={150}
-            propaganda="/men.png"
+            propaganda="/logos/men_p.png"
             description="Being a one-of-a-kind type of item comes with its perks.. 
             - Hodlers of $MEN will be granted MENbership status: The forever, free, 
             access, for all future whitelists in 0xagon's ecosystem. Men is a unique 
@@ -68,7 +30,7 @@ const Hero = () => {
           ></HeroOneProject>
           <HeroOneProject
             path="/logos/her.png"
-            propaganda="/2_her.png"
+            propaganda="/logos/her_p.png"
             imgwidth={110}
             imgheight={150}
             description="Her is a collection of 10.000 NFTs only redeemable by the 
@@ -81,10 +43,10 @@ const Hero = () => {
         <Section>
           <HeroOneProject
             url=""
-            path="/logos/v2_dam.png"
+            path="/logos/dam.png"
             imgwidth={150}
             imgheight={150}
-            propaganda="/v3_dam.png"
+            propaganda="/logos/dam_p.png"
             description="Decentralized Assets Management - DAM, is a serverless cloud
             service (front only) that allows users to search and manage multiple on-chain
             and off-chain assets. Connect your wallet and fetch data from multiple oracles!
@@ -96,7 +58,7 @@ const Hero = () => {
             path="/logos/quantum.png"
             imgwidth={233}
             imgheight={100}
-            propaganda="/quantum.png"
+            propaganda="/logos/quantum_p.png"
             description="The API that fetches quantum data from the physical world and uses a
             seed extractor to increase the uniformness and randomness of the quantum response,
             thus enhancing the quality of the outputs, providing true random numbers."
@@ -107,7 +69,7 @@ const Hero = () => {
             path="/logos/hea.png"
             imgwidth={292}
             imgheight={140}
-            propaganda="/hea.png"
+            propaganda="/logos/hea_p.png"
             description="Hea DAO stands for Happy Ever After Decentralized Autonomous Organization.
             The DAO's purpose aims to make the world a better place by allowing donations on every
             transactions that happen on-chain. People all over Web3 can donate willingly to any 

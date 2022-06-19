@@ -8,29 +8,6 @@
   font-family: "editundo";
   src: url("/fonts/editundo.ttf");
 }
-@font-face {
-  font-family: "edundot";
-  src: url("/fonts/edundot.ttf");
-}
-@font-face {
-  font-family: "edunline";
-  src: url("/fonts/edunline.ttf");
-}
-
-@font-face {
-  font-family: "senior";
-  src: url("/fonts/senior.ttf");
-}
-
-@font-face {
-  font-family: "arcade";
-  src: url("/fonts/arcade.ttf");
-}
-
-@font-face {
-  font-family: "ethervibes";
-  src: url("/fonts/ethervibes.ttf");
-}
 
 @font-face {
   font-family: "ibmplexmonothin";
@@ -73,26 +50,4 @@ button:hover {
 
 a:hover {
   cursor: url("/mouse3.png"), auto;  
-}
-
-
-
-/* width */
-::-webkit-scrollbar {
-  width: 10px;
-}
-
-/* Track */
-::-webkit-scrollbar-track {
-  background: #f1f1f1;
-}
-
-/* Handle */
-::-webkit-scrollbar-thumb {
-  background: #888;
-}
-
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-  background: #555;
 }

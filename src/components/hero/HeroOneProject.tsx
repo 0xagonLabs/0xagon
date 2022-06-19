@@ -14,7 +14,7 @@ type IHeroOneProjectProps = {
   description?: string;
 };
 
-const pica = '/0xagon_full_black.png';
+const placeHolder = '/0xagon_full_black.png';
 
 const HeroOneProject = (props: IHeroOneProjectProps) => {
   const [showBox, setShowBox] = useState(false);
@@ -46,48 +46,43 @@ const HeroOneProject = (props: IHeroOneProjectProps) => {
             >
               <Image
                 alt=""
-                src={props.path ? props.path : pica}
+                src={props.path ? props.path : placeHolder}
                 width={125}
                 height={125}
               />
             </div>
           </div>
         </button>
-        <div
-          className={`infoblock flex-col items-center ${
-            showBox ? 'flex' : 'hidden'
-          }`}
-        >
-          <div className="blocking items-center">
+        <div className={`info-block flex-col ${showBox ? 'flex' : 'hidden'}`}>
+          <div className="img-block">
             <Image
               alt=""
-              src={props.propaganda ? props.propaganda : pica}
+              src={props.propaganda ? props.propaganda : placeHolder}
               width={props.imgwidth ? props.imgwidth : 100}
               height={props.imgheight ? props.imgheight : 100}
             />
           </div>
-          <div className="mt-6 con-font">{props.description}</div>
+          <div className="description">{props.description}</div>
         </div>
         <style jsx>{`
-          .con-font {
-            @apply leading-loose text-center whitespace-pre-line ml-auto;
-            font-family: 'editundo', 'sans-serif';
-          }
-          .blocking {
-            width: 100%;
-            height: ${props.imgheight};
-            display: flex;
-            justify-content: center;
-          }
           .special-cursor:hover {
             cursor: url('/mouse3.png'), auto;
           }
           button.a.b + .infoblock {
             display: flex;
           }
-          .infoblock {
-            z-index: 50;
-            position: absolute;
+          .img-block {
+            width: 100%;
+            height: ${props.imgheight};
+            display: flex;
+            justify-content: center;
+          }
+          .description {
+            @apply mt-6 leading-loose text-center whitespace-pre-line ml-auto;
+            font-family: 'editundo', 'sans-serif';
+          }
+          .info-block {
+            @apply items-center absolute z-50;
             top: 27%;
             left: 8%;
             width: 400px;
