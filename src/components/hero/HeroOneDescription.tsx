@@ -17,17 +17,18 @@ const HeroOneDescription = (props: IHeroOneDescriptionProps) => {
           width={369}
           height={111}
         />
+        <div className="title-properties text-shine">{props.title}</div>
       </div>
-      <div className="title-properties text-shine">{props.title}</div>
       <style jsx>
         {`
           .leading {
-            @apply text-center mt-12;
+            @apply text-center my-12;
             margin-top: 44px;
             line-height: 3rem;
           }
           .title-properties {
-            @apply whitespace-pre-line ml-auto mb-6;
+            @apply whitespace-pre-line ml-auto absolute mb-6;
+            transform: translate(-10px, -65px);
             font-family: 'ibmplexmonoregular';
             width: max-content;
             text-align: end;
@@ -58,10 +59,10 @@ const HeroOneDescription = (props: IHeroOneDescriptionProps) => {
               background-position: 0px;
             }
             5% {
-              background-position: 240px;
+              background-position: 134px;
             }
             100% {
-              background-position: 240px;
+              background-position: 134px;
             }
           }
         `}

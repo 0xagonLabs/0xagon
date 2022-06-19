@@ -10,7 +10,7 @@ const Hero = () => {
     <Background color="flex-grow bg-gray-100 dark:bg-gray-800 ">
       <GroupSection>
         <Section>
-          <HeroOneDescription title="Edge Technology"></HeroOneDescription>
+          <HeroOneDescription title="Labs"></HeroOneDescription>
         </Section>
       </GroupSection>
       <GroupSection addExtras="flex-col">
@@ -26,7 +26,7 @@ const Hero = () => {
             access, for all future whitelists in 0xagon's ecosystem. Men is a unique 
             collection of 10.000 NFTs. Every Men has a set of traits and different 
             rarities. The odds were determined by true quantum randomness - Thanks 
-            to the Australian National University."
+            to the Australian National University"
           ></HeroOneProject>
           <HeroOneProject
             path="/logos/her.png"
@@ -37,7 +37,7 @@ const Hero = () => {
             corresponding $MEN's Token Id. Made on the image of $MEN, each item of 
             the collection contemplates true quantum randomness to decide the quantity 
             of traits and its rarity level. Holders of $HER will be granted the status 
-            of MENbership as well. Or HERbership, one might define."
+            of MENbership as well. Or HERbership, one might define"
           ></HeroOneProject>
         </Section>
         <Section>
@@ -61,7 +61,7 @@ const Hero = () => {
             propaganda="/logos/quantum_p.png"
             description="The API that fetches quantum data from the physical world and uses a
             seed extractor to increase the uniformness and randomness of the quantum response,
-            thus enhancing the quality of the outputs, providing true random numbers."
+            thus enhancing the quality of the outputs, providing true random numbers"
           ></HeroOneProject>
         </Section>
         <Section>
@@ -74,7 +74,7 @@ const Hero = () => {
             The DAO's purpose aims to make the world a better place by allowing donations on every
             transactions that happen on-chain. People all over Web3 can donate willingly to any 
             cause or a specific one. The donation is token represented and grants vote power inside
-            the community."
+            the community"
           ></HeroOneProject>
           <HeroOneProject
             path="/logos/garden.png"
@@ -84,7 +84,7 @@ const Hero = () => {
             description="Pixel Garden is the seed of innovation, the paradigm breaker, the void breather, 
             the horizon of optimization. The future of on-chain as an authentication layer, $GRDN is a 
             prototype, an experiment for the experts, a proof of concept. It breakdown any image and uses a mapping
-            function to assemble the fragments directly by external calls, paying less everytime the database increases."
+            function to assemble the fragments directly by external calls, paying less everytime the database increases"
           ></HeroOneProject>
         </Section>
       </GroupSection>
