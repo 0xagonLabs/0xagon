@@ -10,28 +10,8 @@
 }
 
 @font-face {
-  font-family: "ibmplexmonothin";
-  src: url("/fonts/IBMPlexMono-Thin.ttf");
-}
-
-@font-face {
-  font-family: "ibmplexmonolight";
-  src: url("/fonts/IBMPlexMono-Light.ttf");
-}
-
-@font-face {
   font-family: "ibmplexmonoregular";
   src: url("/fonts/IBMPlexMono-Regular.ttf");
-}
-
-@font-face {
-  font-family: "ibmplexmonomedium";
-  src: url("/fonts/IBMPlexMono-Medium.ttf");
-}
-
-@font-face {
-  font-family: "ibmplexmonobold";
-  src: url("/fonts/IBMPlexMono-Bold.ttf");
 }
 
 body {

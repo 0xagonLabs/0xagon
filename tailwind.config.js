@@ -44,11 +44,7 @@ module.exports = {
       },
       fontFamily: {
         editundo: ['editundo', 'sans-serif'],
-        ibmplexmonothin: ['ibmplexmono-thin', 'sans-serif'],
-        ibmplexmonolight: ['ibmplexmono-light', 'sans-serif'],
         ibmplexmonoregular: ['ibmplexmono-regular', 'sans-serif'],
-        ibmplexmonomedium: ['ibmplexmono-medium', 'sans-serif'],
-        ibmplexmonobold: ['ibmplexmono-bold', 'sans-serif'],
       },
       lineHeight: {
         hero: '4.5rem',
