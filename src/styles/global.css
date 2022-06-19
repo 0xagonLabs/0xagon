@@ -1,0 +1,98 @@
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+
+@font-face {
+  font-family: "editundo";
+  src: url("/fonts/editundo.ttf");
+}
+@font-face {
+  font-family: "edundot";
+  src: url("/fonts/edundot.ttf");
+}
+@font-face {
+  font-family: "edunline";
+  src: url("/fonts/edunline.ttf");
+}
+
+@font-face {
+  font-family: "senior";
+  src: url("/fonts/senior.ttf");
+}
+
+@font-face {
+  font-family: "arcade";
+  src: url("/fonts/arcade.ttf");
+}
+
+@font-face {
+  font-family: "ethervibes";
+  src: url("/fonts/ethervibes.ttf");
+}
+
+@font-face {
+  font-family: "ibmplexmonothin";
+  src: url("/fonts/IBMPlexMono-Thin.ttf");
+}
+
+@font-face {
+  font-family: "ibmplexmonolight";
+  src: url("/fonts/IBMPlexMono-Light.ttf");
+}
+
+@font-face {
+  font-family: "ibmplexmonoregular";
+  src: url("/fonts/IBMPlexMono-Regular.ttf");
+}
+
+@font-face {
+  font-family: "ibmplexmonomedium";
+  src: url("/fonts/IBMPlexMono-Medium.ttf");
+}
+
+@font-face {
+  font-family: "ibmplexmonobold";
+  src: url("/fonts/IBMPlexMono-Bold.ttf");
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow: hidden;
+}
+
+html {
+  cursor: url("/mouse2.png"), auto;  
+}
+
+button:hover {
+  cursor: url("/mouse2.png"), auto;  
+}
+
+a:hover {
+  cursor: url("/mouse3.png"), auto;  
+}
+
+
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
