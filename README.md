@@ -3,4 +3,8 @@
 # 0xagon Labs
 We are developers, crypto enthusiasts, learners, just like you, trying to change the world from our laptops.
 
-[0xagon Website](https://0xagonlabs.com/)
+```
+npm run build
+npm start
+```
+[Official Website](https://0xagonlabs.com/)
