@@ -17,5 +17,6 @@ Must them move output.css to the /out folder created at root and add..
 ```
 <link href="./output.css" rel="stylesheet">
 ```
-.. to any place inside the <html>
-[Official Website](https://0xagonlabs.com/)
+.. to any place inside the <html>.
+  
+###### [Official Website](https://0xagonlabs.com/)
