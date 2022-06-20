@@ -1,4 +1,4 @@
-import { ReactNode, useState } from 'react';
+import { useState } from 'react';
 
 import Image from 'next/image';
 
@@ -6,7 +6,6 @@ type IHeroOneProjectProps = {
   url?: string;
   addExtras?: string;
   path?: string;
-  children: ReactNode;
   propaganda?: string;
   imgwidth?: number;
   imgheight?: number;

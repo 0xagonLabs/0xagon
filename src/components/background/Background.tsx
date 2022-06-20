@@ -2,12 +2,12 @@ import { ReactNode } from 'react';
 
 type IBackgroundProps = {
   children: ReactNode;
-  color?: string;
+  itClasses?: string;
 };
 
 const Background = (props: IBackgroundProps) => {
   return (
-    <div className={props.color}>
+    <div className={props.itClasses}>
       <div id="clouds">
         <div className="cloud x1"></div>
         <div className="cloud x2"></div>

@@ -7,7 +7,7 @@ import { Section } from '../components/layout/Section';
 const Hero = () => {
 
   return (
-    <Background color="flex-grow bg-gray-100 dark:bg-gray-800 ">
+    <Background itClasses="flex-grow bg-gray-100 dark:bg-gray-800 ">
       <GroupSection>
         <Section>
           <HeroOneDescription title="Labs"></HeroOneDescription>

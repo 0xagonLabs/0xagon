@@ -4,7 +4,6 @@ import Image from 'next/image';
 
 type IHeroOneDescriptionProps = {
   title: ReactNode;
-  // title2: ReactNode;
 };
 
 const HeroOneDescription = (props: IHeroOneDescriptionProps) => {
