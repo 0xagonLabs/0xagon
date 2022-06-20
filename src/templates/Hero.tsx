@@ -17,10 +17,10 @@ const Hero = () => {
         <Section addExtras="flex-row">
           <HeroOneProject
             url=""
-            path="/logos/men.png"
+            path="/men.png"
             imgwidth={360}
             imgheight={150}
-            propaganda="/logos/men_p.png"
+            propaganda="/men_p.png"
             description="Being a one-of-a-kind type of item comes with its perks.. 
             - Hodlers of $MEN will be granted MENbership status: The forever, free, 
             access, for all future whitelists in 0xagon's ecosystem. Men is a unique 
@@ -29,8 +29,8 @@ const Hero = () => {
             to the Australian National University"
           ></HeroOneProject>
           <HeroOneProject
-            path="/logos/her.png"
-            propaganda="/logos/her_p.png"
+            path="/her.png"
+            propaganda="/her_p.png"
             imgwidth={110}
             imgheight={150}
             description="Her is a collection of 10.000 NFTs only redeemable by the 
@@ -43,10 +43,10 @@ const Hero = () => {
         <Section>
           <HeroOneProject
             url=""
-            path="/logos/dam.png"
+            path="/dam.png"
             imgwidth={150}
             imgheight={150}
-            propaganda="/logos/dam_p.png"
+            propaganda="/dam_p.png"
             description="Decentralized Assets Management - DAM, is a serverless cloud
             service (front only) that allows users to search and manage multiple on-chain
             and off-chain assets. Connect your wallet and fetch data from multiple oracles!
@@ -55,10 +55,10 @@ const Hero = () => {
           ></HeroOneProject>
           <HeroOneProject
             url=""
-            path="/logos/quantum.png"
+            path="/quantum.png"
             imgwidth={233}
             imgheight={100}
-            propaganda="/logos/quantum_p.png"
+            propaganda="/quantum_p.png"
             description="The API that fetches quantum data from the physical world and uses a
             seed extractor to increase the uniformness and randomness of the quantum response,
             thus enhancing the quality of the outputs, providing true random numbers"
@@ -66,10 +66,10 @@ const Hero = () => {
         </Section>
         <Section>
           <HeroOneProject
-            path="/logos/hea.png"
+            path="/hea.png"
             imgwidth={292}
             imgheight={140}
-            propaganda="/logos/hea_p.png"
+            propaganda="/hea_p.png"
             description="Hea DAO stands for Happy Ever After Decentralized Autonomous Organization.
             The DAO's purpose aims to make the world a better place by allowing donations on every
             transactions that happen on-chain. People all over Web3 can donate willingly to any 
@@ -77,10 +77,10 @@ const Hero = () => {
             the community"
           ></HeroOneProject>
           <HeroOneProject
-            path="/logos/garden.png"
+            path="/garden.png"
             imgwidth={140}
             imgheight={140}
-            propaganda="/logos/garden.png"
+            propaganda="/garden.png"
             description="Pixel Garden is the seed of innovation, the paradigm breaker, the void breather, 
             the horizon of optimization. The future of on-chain as an authentication layer, $GRDN is a 
             prototype, an experiment for the experts, a proof of concept. It breakdown any image and uses a mapping

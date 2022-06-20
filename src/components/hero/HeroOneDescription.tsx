@@ -10,12 +10,7 @@ const HeroOneDescription = (props: IHeroOneDescriptionProps) => {
   return (
     <header className="">
       <div className="leading">
-        <Image
-          alt=""
-          src="/0xagon_full_bluegrey.png"
-          width={369}
-          height={111}
-        />
+        <Image alt="" src="/0xagon.png" width={369} height={111} />
         <div className="title-properties text-shine">{props.title}</div>
       </div>
       <style jsx>
