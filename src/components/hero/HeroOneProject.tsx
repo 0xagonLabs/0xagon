@@ -13,7 +13,7 @@ type IHeroOneProjectProps = {
   description?: string;
 };
 
-const placeHolder = '/0xagon_full_black.png';
+const placeHolder = '/0xagon.png';
 
 const HeroOneProject = (props: IHeroOneProjectProps) => {
   const [showBox, setShowBox] = useState(false);
@@ -26,7 +26,7 @@ const HeroOneProject = (props: IHeroOneProjectProps) => {
         method="get"
         target="_blank"
       >
-        <button disabled={props.url === undefined}>
+        <button disabled={!props.url}>
           <div
             className={`${
               props.url ? '' : 'grayscale'
