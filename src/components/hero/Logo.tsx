@@ -23,7 +23,6 @@ const Logo = (props: ILogoProps) => {
         {`
           .leading-sm {
             @apply h-screen;
-            padding-top: 100%;
             padding-bottom: 100%;
             display: flex;
             align-items: center;
