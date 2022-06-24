@@ -46,7 +46,7 @@ const Propaganda = (props: IPropagandaProps) => {
           .info-block {
             @apply items-center relative z-50;
             margin-top: 200px;
-            width: 330px;
+            width: auto;
             height: auto;
           }
         `}</style>
@@ -115,7 +115,7 @@ const Propaganda = (props: IPropagandaProps) => {
             @apply items-center absolute z-50;
             top: 14%;
             left: 0%;
-            width: 330px;
+            width: 400px;
             height: 500px;
             animation: float 20s linear infinite;
           }

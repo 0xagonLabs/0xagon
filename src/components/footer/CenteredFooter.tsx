@@ -10,7 +10,7 @@ type ICenteredFooterProps = {
 const CenteredFooter = (props: ICenteredFooterProps) => {
   return (
     <div className="font text-center mx-auto z-50">
-      <div className="mt-4 md:mt-8 flex justify-center">
+      <div className="pt-4 md:pt-8 flex justify-center">
         <FooterIconList>{props.iconList}</FooterIconList>
       </div>
       <div className="mb-2 md:mb-4 mt-4 md:mt-8 text-xsss md:text-sm active">
