@@ -9,7 +9,7 @@ import { Footer } from './Footer';
 const Hero = () => {
   return (
     <div className="overflow-y-scroll md:overflow-visible">
-      <Background itClasses="flex-grow bg-gray-100 dark:bg-gray-800">
+      <Background itClasses="flex-grow relative bg-gray-100 dark:bg-gray-800">
         <SectionTitle>
           <Logo title="Labs"></Logo>
         </SectionTitle>
