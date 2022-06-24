@@ -117,7 +117,6 @@ const Propaganda = (props: IPropagandaProps) => {
             left: 0%;
             width: 400px;
             height: 500px;
-            animation: float 20s linear infinite;
           }
           .pulsevibe {
             animation: pulse 10s linear infinite;
@@ -128,14 +127,6 @@ const Propaganda = (props: IPropagandaProps) => {
             }
             50% {
               transform: scale(0.94) translate(0, 0%);
-            }
-          }
-          @keyframes float {
-            0% {
-              transform: translate(0, 0%);
-            }
-            50% {
-              transform: translate(0, 3%);
             }
           }
         `}</style>
