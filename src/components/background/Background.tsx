@@ -8,7 +8,7 @@ type IBackgroundProps = {
 const Background = (props: IBackgroundProps) => {
   return (
     <div className={props.itClasses}>
-      <div id="clouds">
+      <div id="clouds" className="overflow-hidden">
         <div className="cloud x1"></div>
         <div className="cloud x2"></div>
         <div className="cloud x3"></div>
@@ -20,12 +20,11 @@ const Background = (props: IBackgroundProps) => {
         {`
           #clouds {
             position: absolute;
-            padding: 100px 0;
             width: 100%;
             height: 100%;
             background: #c9dbe9;
-            background-image: linear-gradient(90deg, #c9dbe9 10%, #fff 100%);
             background: -linear-gradient(top, #c9dbe9 0%, #fff 100%);
+            background-image: linear-gradient(90deg, #c9dbe9 10%, #fff 100%);
             background: -moz-linear-gradient(top, #c9dbe9 0%, #fff 100%);
           }
 
@@ -33,8 +32,7 @@ const Background = (props: IBackgroundProps) => {
           .cloud {
             width: 200px;
             height: 60px;
-            background: #fff;
-
+            background: #fff;            
             border-radius: 200px;
             -moz-border-radius: 200px;
             -webkit-border-radius: 200px;

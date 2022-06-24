@@ -5,7 +5,7 @@ type ISectionProps = {
   children: ReactNode;
 };
 const GroupSection = (props: ISectionProps) => (
-  <div className={`${props.addExtras} flex max-w-screen-lg mx-auto`}>
+  <div className={`${props.addExtras} flex max-w-screen-lg md:mx-auto`}>
     {props.children}
   </div>
 );

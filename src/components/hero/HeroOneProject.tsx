@@ -20,8 +20,38 @@ const HeroOneProject = (props: IHeroOneProjectProps) => {
 
   return (
     <>
+      <div
+        className={`info-block max-w-screen-lg flex-col flex md:hidden px-4 md:px-0 mb-20 md:mb-0`}
+      >
+        <div className="scale-75 img-block mb-4">
+          <Image
+            alt=""
+            src={props.propaganda ? props.propaganda : placeHolder}
+            width={props.imgwidth ? props.imgwidth : 100}
+            height={props.imgheight ? props.imgheight : 100}
+          />
+        </div>
+        <div className="description">{props.description}</div>
+        <style jsx>{`
+          .img-block {
+            height: auto;
+            width: auto;
+            display: flex;
+            justify-content: center;
+          }
+          .description {
+            @apply text-sm leading-loose text-center whitespace-pre-line ml-auto;
+            font-family: 'editundo', 'sans-serif';
+          }
+          .info-block {
+            @apply items-center relative z-50;
+            width: 350px;
+            height: auto;
+          }
+        `}</style>
+      </div>
       <form
-        className="info-hover flex flex-col items-center"
+        className="info-hover hidden md:flex flex-col items-center"
         action={props.url}
         method="get"
         target="_blank"
@@ -30,7 +60,7 @@ const HeroOneProject = (props: IHeroOneProjectProps) => {
           <div
             className={`${
               props.url ? '' : 'grayscale'
-            } pulsevibe max-w-screen-lg mx-auto py-6 px-16 ${
+            } pulsevibe max-w-screen-lg mx-auto hidden md:block p-0 md:py-6 md:px-16 ${
               props.addExtras ? props.addExtras : ''
             }`}
           >

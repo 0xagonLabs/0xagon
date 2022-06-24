@@ -9,19 +9,33 @@ type IHeroOneDescriptionProps = {
 const HeroOneDescription = (props: IHeroOneDescriptionProps) => {
   return (
     <header className="">
-      <div className="leading">
+      <div className="md:hidden block leading-sm md:leading">
+        <Image alt="" src="/0xagon.png" width={246} height={74} />
+        <div className="title-properties text-shine tp-sm">{props.title}</div>
+      </div>
+      <div className="hidden md:block leading">
         <Image alt="" src="/0xagon.png" width={369} height={111} />
         <div className="title-properties text-shine">{props.title}</div>
       </div>
       <style jsx>
         {`
+          .leading-sm {
+            @apply h-screen;
+            padding-top: 100%;
+            padding-bottom: 100%;
+            display: flex;
+            align-items: center;  
+          }
           .leading {
-            @apply text-center my-12;
+            @apply text-center;
             margin-top: 44px;
-            line-height: 3rem;
+          }
+          .tp-sm {
+            position: absolute;
+            transform: translate(-40px, 42px) !important;
           }
           .title-properties {
-            @apply whitespace-pre-line ml-auto absolute mb-6;
+            @apply whitespace-pre-line ml-auto mb-6;
             transform: translate(-10px, -65px);
             font-family: 'ibmplexmonoregular';
             width: max-content;

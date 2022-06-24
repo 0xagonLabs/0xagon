@@ -1,10 +1,10 @@
 import Link from 'next/link';
 
 import { CenteredFooter } from '../components/footer/CenteredFooter';
-import { Section } from '../components/layout/Section';
+import { SectionFooter } from '../components/layout/SectionFooter';
 
 const Footer = () => (
-  <Section>
+  <SectionFooter>
     <CenteredFooter
       iconList={
         <>
@@ -32,7 +32,7 @@ const Footer = () => (
         </>
       }
     ></CenteredFooter>
-  </Section>
+  </SectionFooter>
 );
 
 export { Footer };
