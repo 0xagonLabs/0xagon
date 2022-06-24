@@ -115,7 +115,7 @@ const Propaganda = (props: IPropagandaProps) => {
             @apply items-center absolute z-50;
             top: 14%;
             left: 0%;
-            width: 400px;
+            width: 330px;
             height: 500px;
             animation: float 20s linear infinite;
           }
