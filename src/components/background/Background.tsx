@@ -20,8 +20,8 @@ const Background = (props: IBackgroundProps) => {
         {`
           #clouds {
             position: absolute;
-            width: 100%;
-            height: 100%;
+            width: 100vh;
+            height: 100vh;
             background: #c9dbe9;
             background: -linear-gradient(top, #c9dbe9 0%, #fff 100%);
             background-image: linear-gradient(90deg, #c9dbe9 10%, #fff 100%);
