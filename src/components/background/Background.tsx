@@ -32,7 +32,7 @@ const Background = (props: IBackgroundProps) => {
           .cloud {
             width: 200px;
             height: 60px;
-            background: #fff;            
+            background: #fff;
             border-radius: 200px;
             -moz-border-radius: 200px;
             -webkit-border-radius: 200px;

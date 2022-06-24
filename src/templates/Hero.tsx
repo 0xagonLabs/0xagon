@@ -1,6 +1,6 @@
 import { Background } from '../components/background/Background';
-import { HeroOneDescription } from '../components/hero/HeroOneDescription';
-import { HeroOneProject } from '../components/hero/HeroOneProject';
+import { Logo } from '../components/hero/Logo';
+import { Propaganda } from '../components/hero/Propaganda';
 import { GroupSection } from '../components/layout/GroupSection';
 import { Section } from '../components/layout/Section';
 import { SectionTitle } from '../components/layout/SectionTitle';
@@ -8,14 +8,14 @@ import { Footer } from './Footer';
 
 const Hero = () => {
   return (
-    <div className="overflow-y-scroll">
+    <div className="overflow-y-scroll md:overflow-visible">
       <Background itClasses="flex-grow bg-gray-100 dark:bg-gray-800">
         <SectionTitle>
-          <HeroOneDescription title="Labs"></HeroOneDescription>
+          <Logo title="Labs"></Logo>
         </SectionTitle>
-        <GroupSection addExtras="flex-col md:flex-col mx-5 relative overflow-y-scroll">
+        <GroupSection addExtras="flex-col md:flex-col mx-5 relative overflow-y-scroll md:overflow-hidden mb-24">
           <Section>
-            <HeroOneProject
+            <Propaganda
               url="adads"
               path="/men.png"
               imgwidth={360}
@@ -27,8 +27,8 @@ const Hero = () => {
               collection of 10.000 NFTs. Every Men has a set of traits and different 
               rarities. The odds were determined by true quantum randomness - Thanks 
               to the Australian National University"
-            ></HeroOneProject>
-            <HeroOneProject
+            ></Propaganda>
+            <Propaganda
               path="/her.png"
               propaganda="/her_p.png"
               imgwidth={110}
@@ -38,10 +38,10 @@ const Hero = () => {
               the collection contemplates true quantum randomness to decide the quantity 
               of traits and its rarity level. Holders of $HER will be granted the status 
               of MENbership as well. Or HERbership, one might define"
-            ></HeroOneProject>
+            ></Propaganda>
           </Section>
           <Section>
-            <HeroOneProject
+            <Propaganda
               url=""
               path="/dam.png"
               imgwidth={150}
@@ -52,8 +52,8 @@ const Hero = () => {
               and off-chain assets. Connect your wallet and fetch data from multiple oracles!
               Enhanced management and deep search is available as premium service for $MEN 
               and $HER holders"
-            ></HeroOneProject>
-            <HeroOneProject
+            ></Propaganda>
+            <Propaganda
               url=""
               path="/quantum.png"
               imgwidth={233}
@@ -62,10 +62,10 @@ const Hero = () => {
               description="The API that fetches quantum data from the physical world and uses a
               seed extractor to increase the uniformness and randomness of the quantum response,
               thus enhancing the quality of the outputs, providing true random numbers"
-            ></HeroOneProject>
+            ></Propaganda>
           </Section>
           <Section>
-            <HeroOneProject
+            <Propaganda
               path="/hea.png"
               imgwidth={292}
               imgheight={140}
@@ -73,10 +73,9 @@ const Hero = () => {
               description="Hea DAO stands for Happy Ever After Decentralized Autonomous Organization.
               The DAO's purpose aims to make the world a better place by allowing donations on every
               transactions that happen on-chain. People all over Web3 can donate willingly to any 
-              cause or a specific one. The donation is token represented and grants vote power inside
-              the community"
-            ></HeroOneProject>
-            <HeroOneProject
+              cause or a specific one."
+            ></Propaganda>
+            <Propaganda
               path="/garden.png"
               imgwidth={140}
               imgheight={140}
@@ -85,7 +84,7 @@ const Hero = () => {
               the horizon of optimization. The future of on-chain as an authentication layer, $GRDN is a 
               prototype, an experiment for the experts, a proof of concept. It breakdown any image and uses a mapping
               function to assemble the fragments directly by external calls, paying less everytime the database increases"
-            ></HeroOneProject>
+            ></Propaganda>
           </Section>
         </GroupSection>
         <Footer />

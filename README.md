@@ -11,12 +11,6 @@ npm start
 Static website
 ```
 npm run build && npm run export
-npx tailwindcss build src/styles/global.css -o output.css
 ```
-Must them move output.css to the /out folder created at root and add..
-```
-<link href="./output.css" rel="stylesheet">
-```
-.. to any place inside the <html>.
   
 ###### [Official Website](https://0xagonlabs.com/)
