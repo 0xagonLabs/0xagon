@@ -16,6 +16,7 @@ const nextConfig = {
   assetPrefix: './',
   images: {
     loader: 'akamai',
+    minimumCacheTTL: 60,
     path: '',
   },
 };
