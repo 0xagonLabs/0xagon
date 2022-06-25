@@ -21,7 +21,8 @@ body {
 }
 
 html {
-  cursor: url("/mouse2.png"), auto;  
+  cursor: url("/mouse2.png"), auto;
+  scroll-behavior: smooth;
 }
 
 button:hover {

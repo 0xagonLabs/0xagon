@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { MutableRefObject, useState } from 'react';
 
 import Image from 'next/image';
 
@@ -7,10 +7,11 @@ type IPropagandaProps = {
   addExtras?: string;
   path?: string;
   propaganda?: string;
-  imgwidth?: number;
-  imgheight?: number;
+  imgWidth?: number;
+  imgHeight?: number;
   title?: string;
   description?: string;
+  ref?: MutableRefObject<null>;
 };
 
 const placeHolder = '/0xagon.png';
@@ -27,8 +28,8 @@ const Propaganda = (props: IPropagandaProps) => {
           <Image
             alt=""
             src={props.propaganda ? props.propaganda : placeHolder}
-            width={props.imgwidth ? props.imgwidth : 100}
-            height={props.imgheight ? props.imgheight : 100}
+            width={props.imgWidth ? props.imgWidth : 100}
+            height={props.imgHeight ? props.imgHeight : 100}
           />
         </div>
         <div className="description">{props.description}</div>
@@ -88,8 +89,8 @@ const Propaganda = (props: IPropagandaProps) => {
             <Image
               alt=""
               src={props.propaganda ? props.propaganda : placeHolder}
-              width={props.imgwidth ? props.imgwidth : 100}
-              height={props.imgheight ? props.imgheight : 100}
+              width={props.imgWidth ? props.imgWidth : 100}
+              height={props.imgHeight ? props.imgHeight : 100}
             />
           </div>
           <div className="description">{props.description}</div>
@@ -103,7 +104,7 @@ const Propaganda = (props: IPropagandaProps) => {
           }
           .img-block {
             width: 100%;
-            height: ${props.imgheight};
+            height: ${props.imgHeight};
             display: flex;
             justify-content: center;
           }

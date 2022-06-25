@@ -7,20 +7,38 @@ type ILogoProps = {
 };
 
 const Logo = (props: ILogoProps) => {
+  function smoothscroll() {
+    document.getElementById('flyers').scrollIntoView();
+  }
+
   return (
     <header className="">
       <div className="md:hidden block md:leading">
         <div className="leading-sm">
           <Image alt="" src="/0xagon.png" width={246} height={74} />
-          <div className="title-properties text-shine tp-sm">{props.title}</div>
+          <div className="title-properties sub-title-shine title-properties-sm">
+            {props.title}
+          </div>
+          <div onClick={smoothscroll} className="scroll-down2"></div>
         </div>
       </div>
       <div className="hidden md:block leading">
         <Image alt="" src="/0xagon.png" width={369} height={111} />
-        <div className="title-properties text-shine">{props.title}</div>
+        <div className="title-properties sub-title-shine">{props.title}</div>
       </div>
       <style jsx>
         {`
+          .scroll-down2 {
+            scroll-behavior: smooth;
+            position: absolute;
+            width: 0;
+            height: 0;
+            z-index: 50;
+            transform: translate(200px, 200px);
+            border-left: 15px solid transparent;
+            border-right: 15px solid transparent;
+            border-top: 30px solid #a1aec1;
+          }
           .leading-sm {
             @apply h-screen;
             padding-bottom: 100%;
@@ -31,7 +49,7 @@ const Logo = (props: ILogoProps) => {
             @apply text-center;
             margin-top: 44px;
           }
-          .tp-sm {
+          .title-properties-sm {
             position: absolute;
             transform: translate(-40px, 42px) !important;
           }
@@ -43,7 +61,7 @@ const Logo = (props: ILogoProps) => {
             text-align: end;
             opacity: 0.6;
           }
-          .text-shine {
+          .sub-title-shine {
             color: #a1aec1;
             padding: 12px 0px 12px 96px;
             background: linear-gradient(

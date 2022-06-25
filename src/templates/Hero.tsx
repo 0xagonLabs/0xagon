@@ -8,18 +8,19 @@ import { Footer } from './Footer';
 
 const Hero = () => {
   return (
-    <div className="overflow-y-scroll md:overflow-visible">
-      <Background itClasses="flex-grow relative bg-gray-100 dark:bg-gray-800">
+    <div className="md:overflow-visible">
+      <Background itClasses="h-screen flex-grow relative bg-gray-100">
         <SectionTitle>
           <Logo title="Labs"></Logo>
         </SectionTitle>
         <GroupSection addExtras="flex-col md:flex-col mx-5 relative overflow-y-scroll md:overflow-hidden mb-24">
+          <div id="flyers"></div>
           <Section>
             <Propaganda
-              url="adads"
+              url=""
               path="/men.png"
-              imgwidth={360}
-              imgheight={150}
+              imgWidth={360}
+              imgHeight={150}
               propaganda="/men_p.png"
               description="Being a one-of-a-kind type of item comes with its perks.. 
               - Hodlers of $MEN will be granted MENbership status: The forever, free, 
@@ -31,8 +32,8 @@ const Hero = () => {
             <Propaganda
               path="/her.png"
               propaganda="/her_p.png"
-              imgwidth={110}
-              imgheight={150}
+              imgWidth={110}
+              imgHeight={150}
               description="Her is a collection of 10.000 NFTs only redeemable by the 
               corresponding $MEN's Token Id. Made on the image of $MEN, each item of 
               the collection contemplates true quantum randomness to decide the quantity 
@@ -44,8 +45,8 @@ const Hero = () => {
             <Propaganda
               url=""
               path="/dam.png"
-              imgwidth={150}
-              imgheight={150}
+              imgWidth={150}
+              imgHeight={150}
               propaganda="/dam_p.png"
               description="Decentralized Assets Management - DAM, is a serverless cloud
               service (front only) that allows users to search and manage multiple on-chain
@@ -56,8 +57,8 @@ const Hero = () => {
             <Propaganda
               url=""
               path="/quantum.png"
-              imgwidth={233}
-              imgheight={100}
+              imgWidth={233}
+              imgHeight={100}
               propaganda="/quantum_p.png"
               description="The API that fetches quantum data from the physical world and uses a
               seed extractor to increase the uniformness and randomness of the quantum response,
@@ -67,8 +68,8 @@ const Hero = () => {
           <Section>
             <Propaganda
               path="/hea.png"
-              imgwidth={292}
-              imgheight={140}
+              imgWidth={292}
+              imgHeight={140}
               propaganda="/hea_p.png"
               description="Hea DAO stands for Happy Ever After Decentralized Autonomous Organization.
               The DAO's purpose aims to make the world a better place by allowing donations on every
@@ -77,8 +78,8 @@ const Hero = () => {
             ></Propaganda>
             <Propaganda
               path="/garden.png"
-              imgwidth={140}
-              imgheight={140}
+              imgWidth={140}
+              imgHeight={140}
               propaganda="/garden.png"
               description="Pixel Garden is the seed of innovation, the paradigm breaker, the void breather, 
               the horizon of optimization. The future of on-chain as an authentication layer, $GRDN is a 
