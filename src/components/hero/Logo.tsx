@@ -8,7 +8,7 @@ type ILogoProps = {
 
 const Logo = (props: ILogoProps) => {
   function smoothscroll() {
-    document.getElementById('flyers').scrollIntoView();
+    document.getElementById('flyers')!.scrollIntoView();
   }
 
   return (
