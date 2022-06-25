@@ -74,7 +74,7 @@ const Hero = () => {
               description="Hea DAO stands for Happy Ever After Decentralized Autonomous Organization.
               The DAO's purpose aims to make the world a better place by allowing donations on every
               transactions that happen on-chain. People all over Web3 can donate willingly to any 
-              cause or a specific one."
+              cause or a specific one"
             ></Propaganda>
             <Propaganda
               path="/garden.png"
