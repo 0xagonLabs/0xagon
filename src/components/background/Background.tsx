@@ -8,7 +8,7 @@ type IBackgroundProps = {
 const Background = (props: IBackgroundProps) => {
   return (
     <div className={props.itClasses}>
-      <div id="clouds" className="overflow-hidden">
+      <div id="clouds" className="fixed overflow-hidden">
         <div className="cloud x1"></div>
         <div className="cloud x2"></div>
         <div className="cloud x3"></div>
@@ -19,7 +19,6 @@ const Background = (props: IBackgroundProps) => {
       <style jsx>
         {`
           #clouds {
-            position: absolute;
             width: 100%;
             height: 100%;
             background: #c9dbe9;
