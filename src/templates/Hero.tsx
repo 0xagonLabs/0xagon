@@ -17,7 +17,18 @@ const Hero = () => {
           <div id="flyers"></div>
           <Section>
             <Propaganda
-              url=""
+              path="/her.png"
+              propaganda="/her_p.png"
+              imgWidth={110}
+              imgHeight={150}
+              description="Her is a collection of 10.000 NFTs only redeemable by the 
+              corresponding $MEN's Token Id. Made on the image of $MEN, each item of 
+              the collection contemplates true quantum randomness to decide the quantity 
+              of traits and its rarity level. Holders of $HER will be granted the status 
+              of MENbership as well. Or HERbership, one might define"
+            ></Propaganda>
+            <Propaganda
+              url="https://project-men-vercel.vercel.app/"
               path="/men.png"
               imgWidth={360}
               imgHeight={150}
@@ -28,17 +39,6 @@ const Hero = () => {
               collection of 10.000 NFTs. Every Men has a set of traits and different 
               rarities. The odds were determined by true quantum randomness - Thanks 
               to the Australian National University"
-            ></Propaganda>
-            <Propaganda
-              path="/her.png"
-              propaganda="/her_p.png"
-              imgWidth={110}
-              imgHeight={150}
-              description="Her is a collection of 10.000 NFTs only redeemable by the 
-              corresponding $MEN's Token Id. Made on the image of $MEN, each item of 
-              the collection contemplates true quantum randomness to decide the quantity 
-              of traits and its rarity level. Holders of $HER will be granted the status 
-              of MENbership as well. Or HERbership, one might define"
             ></Propaganda>
           </Section>
           <Section>
