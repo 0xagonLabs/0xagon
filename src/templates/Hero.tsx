@@ -28,7 +28,7 @@ const Hero = () => {
               of MENbership as well. Or HERbership, one might define"
             ></Propaganda>
             <Propaganda
-              url="https://project-men-vercel.vercel.app/"
+              url="https://demo-men.vercel.app/"
               path="/men.png"
               imgWidth={360}
               imgHeight={150}
